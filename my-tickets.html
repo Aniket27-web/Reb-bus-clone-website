@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tickets - RedBus Clone</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/my-tickets.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>redBus</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search-results.html">Bus Tickets</a></li>
+          <li><a href="my-tickets.html" class="active">My Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="help">Help</a>
+        <a href="#" class="account">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="my-tickets-header">
+      <div class="container">
+        <h2>My Tickets</h2>
+        <p>View and manage all your bus tickets</p>
+      </div>
+    </section>
+
+    <section class="my-tickets-container">
+      <div class="container">
+        <div class="tickets-nav">
+          <button class="nav-btn active" data-tab="upcoming">Upcoming Trips</button>
+          <button class="nav-btn" data-tab="completed">Completed Trips</button>
+          <button class="nav-btn" data-tab="cancelled">Cancelled Trips</button>
+        </div>
+        
+        <div class="ticket-search">
+          <input type="text" placeholder="Search tickets by destination, bus operator, etc.">
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div class="tickets-list upcoming-trips active">
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <div class="ticket-status">Confirmed</div>
+              <div class="ticket-id">Booking ID: RB2023061501</div>
+            </div>
+            <div class="ticket-body">
+              <div class="journey-details">
+                <div class="journey-route">
+                  <div class="route-point">
+                    <p class="place">Mumbai</p>
+                    <p class="time">07:00, 15 Jun</p>
+                    <p class="location">Dadar</p>
+                  </div>
+                  <div class="route-arrow">
+                    <div class="duration">3h 30m</div>
+                  </div>
+                  <div class="route-point">
+                    <p class="place">Pune</p>
+                    <p class="time">10:30, 15 Jun</p>
+                    <p class="location">Hinjewadi</p>
+                  </div>
+                </div>
+                <div class="operator-details">
+                  <p class="operator-name">Shivneri Travels</p>
+                  <p class="bus-type">AC Sleeper (2+1)</p>
+                </div>
+                <div class="passenger-details">
+                  <p class="passenger-name">Passenger: Rahul Sharma</p>
+                  <p class="seat-number">Seat: L5</p>
+                </div>
+              </div>
+              <div class="ticket-actions">
+                <a href="#" class="view-ticket">View Ticket</a>
+                <a href="#" class="cancel-ticket">Cancel Ticket</a>
+                <a href="#" class="download-ticket">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <div class="ticket-status">Confirmed</div>
+              <div class="ticket-id">Booking ID: RB2023062001</div>
+            </div>
+            <div class="ticket-body">
+              <div class="journey-details">
+                <div class="journey-route">
+                  <div class="route-point">
+                    <p class="place">Bangalore</p>
+                    <p class="time">21:00, 20 Jun</p>
+                    <p class="location">Majestic</p>
+                  </div>
+                  <div class="route-arrow">
+                    <div class="duration">6h 15m</div>
+                  </div>
+                  <div class="route-point">
+                    <p class="place">Chennai</p>
+                    <p class="time">03:15, 21 Jun</p>
+                    <p class="location">Koyambedu</p>
+                  </div>
+                </div>
+                <div class="operator-details">
+                  <p class="operator-name">VRL Travels</p>
+                  <p class="bus-type">Volvo Multi-Axle AC</p>
+                </div>
+                <div class="passenger-details">
+                  <p class="passenger-name">Passenger: Rahul Sharma</p>
+                  <p class="seat-number">Seat: U10</p>
+                </div>
+              </div>
+              <div class="ticket-actions">
+                <a href="#" class="view-ticket">View Ticket</a>
+                <a href="#" class="cancel-ticket">Cancel Ticket</a>
+                <a href="#" class="download-ticket">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tickets-list completed-trips">
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <div class="ticket-status completed">Completed</div>
+              <div class="ticket-id">Booking ID: RB2023050501</div>
+            </div>
+            <div class="ticket-body">
+              <div class="journey-details">
+                <div class="journey-route">
+                  <div class="route-point">
+                    <p class="place">Delhi</p>
+                    <p class="time">06:30, 05 May</p>
+                    <p class="location">Kashmere Gate</p>
+                  </div>
+                  <div class="route-arrow">
+                    <div class="duration">4h 45m</div>
+                  </div>
+                  <div class="route-point">
+                    <p class="place">Jaipur</p>
+                    <p class="time">11:15, 05 May</p>
+                    <p class="location">Sindhi Camp</p>
+                  </div>
+                </div>
+                <div class="operator-details">
+                  <p class="operator-name">Rajasthan Travels</p>
+                  <p class="bus-type">AC Sleeper</p>
+                </div>
+                <div class="passenger-details">
+                  <p class="passenger-name">Passenger: Rahul Sharma</p>
+                  <p class="seat-number">Seat: L7</p>
+                </div>
+              </div>
+              <div class="ticket-actions">
+                <a href="#" class="view-ticket">View Ticket</a>
+                <a href="#" class="download-ticket">Download</a>
+                <a href="#" class="rate-journey">Rate Journey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tickets-list cancelled-trips">
+          <div class="ticket-card">
+            <div class="ticket-header">
+              <div class="ticket-status cancelled">Cancelled</div>
+              <div class="ticket-id">Booking ID: RB2023042201</div>
+            </div>
+            <div class="ticket-body">
+              <div class="journey-details">
+                <div class="journey-route">
+                  <div class="route-point">
+                    <p class="place">Hyderabad</p>
+                    <p class="time">22:00, 22 Apr</p>
+                    <p class="location">Lakdi-ka-pul</p>
+                  </div>
+                  <div class="route-arrow">
+                    <div class="duration">8h 30m</div>
+                  </div>
+                  <div class="route-point">
+                    <p class="place">Bangalore</p>
+                    <p class="time">06:30, 23 Apr</p>
+                    <p class="location">Electronic City</p>
+                  </div>
+                </div>
+                <div class="operator-details">
+                  <p class="operator-name">Orange Travels</p>
+                  <p class="bus-type">AC Sleeper</p>
+                </div>
+                <div class="passenger-details">
+                  <p class="passenger-name">Passenger: Rahul Sharma</p>
+                  <p class="seat-number">Seat: U5</p>
+                </div>
+                <div class="cancellation-info">
+                  <p class="refund-info">Refund Amount: ₹630</p>
+                  <p class="refund-status">Refund Status: Processed</p>
+                </div>
+              </div>
+              <div class="ticket-actions">
+                <a href="#" class="view-ticket">View Cancellation</a>
+                <a href="#" class="book-again">Book Again</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="no-tickets-message">
+          <div class="no-tickets-icon"></div>
+          <h3>No tickets found</h3>
+          <p>You don't have any tickets in this category</p>
+          <a href="index.html" class="book-now-btn">Book a Bus Ticket</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>About redBus</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bus Operator Registration</a></li>
+            <li><a href="#">Agent Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Global Sites</h4>
+          <ul>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Malaysia</a></li>
+            <li><a href="#">Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 redBus Clone. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>

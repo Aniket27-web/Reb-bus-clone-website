@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Details - RedBus Clone</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/bus-details.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>redBus</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search-results.html" class="active">Bus Tickets</a></li>
+          <li><a href="my-tickets.html">My Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="help">Help</a>
+        <a href="#" class="account">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="bus-header">
+      <div class="container">
+        <h2>Shivneri Travels - AC Sleeper (2+1)</h2>
+        <div class="route-info">
+          <p>Mumbai to Pune</p>
+          <p>Thursday, 15 June 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bus-details-container">
+      <div class="container">
+        <div class="bus-info-section">
+          <div class="journey-details">
+            <div class="time-details">
+              <div class="departure">
+                <h3>Departure</h3>
+                <p class="time">07:00</p>
+                <p class="date">Thu, 15 Jun</p>
+                <p class="location">Dadar, Mumbai</p>
+              </div>
+              <div class="duration">
+                <p>3h 30m</p>
+                <div class="duration-arrow"></div>
+              </div>
+              <div class="arrival">
+                <h3>Arrival</h3>
+                <p class="time">10:30</p>
+                <p class="date">Thu, 15 Jun</p>
+                <p class="location">Hinjewadi, Pune</p>
+              </div>
+            </div>
+            
+            <div class="amenities-section">
+              <h3>Amenities</h3>
+              <div class="amenities-list">
+                <div class="amenity">
+                  <div class="amenity-icon usb"></div>
+                  <p>USB Charging</p>
+                </div>
+                <div class="amenity">
+                  <div class="amenity-icon wifi"></div>
+                  <p>WiFi</p>
+                </div>
+                <div class="amenity">
+                  <div class="amenity-icon water"></div>
+                  <p>Water Bottle</p>
+                </div>
+                <div class="amenity">
+                  <div class="amenity-icon blanket"></div>
+                  <p>Blanket</p>
+                </div>
+                <div class="amenity">
+                  <div class="amenity-icon reading"></div>
+                  <p>Reading Light</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="policies">
+              <h3>Policies</h3>
+              <div class="policy-section">
+                <h4>Cancellation Policy</h4>
+                <table class="policy-table">
+                  <tr>
+                    <th>Time before departure</th>
+                    <th>Refund Percentage</th>
+                  </tr>
+                  <tr>
+                    <td>> 24 hours</td>
+                    <td>90%</td>
+                  </tr>
+                  <tr>
+                    <td>12 - 24 hours</td>
+                    <td>70%</td>
+                  </tr>
+                  <tr>
+                    <td>6 - 12 hours</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>0 - 6 hours</td>
+                    <td>No Refund</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="policy-section">
+                <h4>Baggage Policy</h4>
+                <p>15 Kg per passenger. Extra baggage may incur additional charges.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-section">
+            <h3>Customer Reviews</h3>
+            <div class="overall-rating">
+              <div class="rating-score">4.5</div>
+              <div class="rating-text">
+                <p class="rating-label">Excellent</p>
+                <p class="rating-count">Based on 352 reviews</p>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="reviewer-info">
+                <p class="reviewer-name">Rahul M.</p>
+                <p class="review-date">Travelled on: 02 Jun 2023</p>
+              </div>
+              <div class="review-rating">4.0</div>
+              <p class="review-text">Comfortable journey. Bus was clean and staff was courteous. Reached on time.</p>
+            </div>
+
+            <div class="review-card">
+              <div class="reviewer-info">
+                <p class="reviewer-name">Priya S.</p>
+                <p class="review-date">Travelled on: 28 May 2023</p>
+              </div>
+              <div class="review-rating">5.0</div>
+              <p class="review-text">Excellent service. AC was working properly, seats were comfortable. Driver was experienced and drove safely.</p>
+            </div>
+
+            <a href="#" class="all-reviews-btn">See All Reviews</a>
+          </div>
+        </div>
+
+        <div class="seat-selection">
+          <h3>Select Your Seats</h3>
+          <div class="bus-layout">
+            <div class="layout-info">
+              <div class="seat-info">
+                <div class="seat-type available"></div>
+                <p>Available</p>
+              </div>
+              <div class="seat-info">
+                <div class="seat-type unavailable"></div>
+                <p>Unavailable</p>
+              </div>
+              <div class="seat-info">
+                <div class="seat-type ladies"></div>
+                <p>Ladies</p>
+              </div>
+              <div class="seat-info">
+                <div class="seat-type selected"></div>
+                <p>Selected</p>
+              </div>
+            </div>
+
+            <div class="driver-section">
+              <div class="driver"></div>
+              <div class="door"></div>
+            </div>
+            
+            <div class="seating-arrangement">
+              <div class="lower-deck">
+                <h4>Lower Deck</h4>
+                <div class="seats-container">
+                  <div class="seat available" data-seat-number="L1">L1</div>
+                  <div class="seat available" data-seat-number="L2">L2</div>
+                  <div class="seat ladies" data-seat-number="L3">L3</div>
+                  <div class="seat unavailable" data-seat-number="L4">L4</div>
+                  <div class="seat available" data-seat-number="L5">L5</div>
+                  <div class="seat available" data-seat-number="L6">L6</div>
+                  <div class="seat available" data-seat-number="L7">L7</div>
+                  <div class="seat available" data-seat-number="L8">L8</div>
+                  <div class="seat available" data-seat-number="L9">L9</div>
+                  <div class="seat unavailable" data-seat-number="L10">L10</div>
+                  <div class="seat available" data-seat-number="L11">L11</div>
+                  <div class="seat available" data-seat-number="L12">L12</div>
+                  <div class="seat available" data-seat-number="L13">L13</div>
+                  <div class="seat available" data-seat-number="L14">L14</div>
+                  <div class="seat ladies" data-seat-number="L15">L15</div>
+                </div>
+              </div>
+              
+              <div class="upper-deck">
+                <h4>Upper Deck</h4>
+                <div class="seats-container">
+                  <div class="seat available" data-seat-number="U1">U1</div>
+                  <div class="seat available" data-seat-number="U2">U2</div>
+                  <div class="seat available" data-seat-number="U3">U3</div>
+                  <div class="seat available" data-seat-number="U4">U4</div>
+                  <div class="seat unavailable" data-seat-number="U5">U5</div>
+                  <div class="seat available" data-seat-number="U6">U6</div>
+                  <div class="seat available" data-seat-number="U7">U7</div>
+                  <div class="seat available" data-seat-number="U8">U8</div>
+                  <div class="seat ladies" data-seat-number="U9">U9</div>
+                  <div class="seat available" data-seat-number="U10">U10</div>
+                  <div class="seat available" data-seat-number="U11">U11</div>
+                  <div class="seat available" data-seat-number="U12">U12</div>
+                  <div class="seat unavailable" data-seat-number="U13">U13</div>
+                  <div class="seat available" data-seat-number="U14">U14</div>
+                  <div class="seat available" data-seat-number="U15">U15</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="selected-seats-info">
+            <div class="selected-seats">
+              <h4>Selected Seats: <span id="seats-count">0</span></h4>
+              <p id="seat-numbers">None</p>
+            </div>
+            <div class="price-summary">
+              <p>Base Fare: <span id="base-fare">₹0</span></p>
+              <p>Tax: <span id="tax">₹0</span></p>
+              <p class="total">Total Amount: <span id="total-amount">₹0</span></p>
+            </div>
+            <a href="booking.html" class="proceed-btn">Proceed to Book</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>About redBus</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bus Operator Registration</a></li>
+            <li><a href="#">Agent Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Global Sites</h4>
+          <ul>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Malaysia</a></li>
+            <li><a href="#">Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 redBus Clone. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>

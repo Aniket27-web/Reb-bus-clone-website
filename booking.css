@@ -1,0 +1,385 @@
+/* Booking Page Styles */
+
+/* Booking Header */
+.booking-header {
+    background-color: var(--white);
+    padding: 20px 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  
+  .booking-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .booking-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    position: relative;
+  }
+  
+  .progress-number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .progress-item.active .progress-number {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .progress-item p {
+    font-size: 14px;
+    color: var(--text-gray);
+    text-align: center;
+  }
+  
+  .progress-item.active p {
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+  
+  .progress-line {
+    flex: 1;
+    height: 2px;
+    background-color: var(--gray);
+    position: relative;
+    bottom: 12px;
+  }
+  
+  .progress-line::before, .progress-line::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    top: -3px;
+  }
+  
+  .progress-line::before {
+    left: -4px;
+  }
+  
+  .progress-line::after {
+    right: -4px;
+  }
+  
+  /* Booking Container */
+  .booking-container .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Booking Form Section */
+  .booking-form-section {
+    flex: 0 0 65%;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+  }
+  
+  .booking-form-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .passenger-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .passenger-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .passenger-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .passenger-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .input-info {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 5px;
+  }
+  
+  .passenger-header {
+    background-color: var(--light-gray);
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .passenger-header h4 {
+    font-size: 16px;
+    color: var(--text-dark);
+  }
+  
+  .gender-group .gender-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-label input {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .additional-options {
+    margin-top: 30px;
+  }
+  
+  .additional-options h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .insurance-option, .donation-option {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  
+  .checkbox-label input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+  
+  .option-info {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  
+  .proceed-payment-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+  }
+  
+  .proceed-payment-btn:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  /* Booking Summary */
+  .booking-summary {
+    flex: 0 0 30%;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+  }
+  
+  .booking-summary h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .bus-summary {
+    margin-bottom: 20px;
+  }
+  
+  .operator-info h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .operator-info p {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .journey-overview {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .journey-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+  }
+  
+  .date-label {
+    font-weight: 500;
+  }
+  
+  .journey-route {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .route-point {
+    flex: 1;
+  }
+  
+  .route-point .time {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .route-point .place {
+    color: var(--text-gray);
+    font-size: 14px;
+  }
+  
+  .route-arrow {
+    width: 30px;
+    height: 2px;
+    background-color: var(--border-color);
+    position: relative;
+  }
+  
+  .route-arrow::before, .route-arrow::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    top: -2px;
+  }
+  
+  .route-arrow::before {
+    left: -3px;
+  }
+  
+  .route-arrow::after {
+    right: -3px;
+  }
+  
+  .seat-summary, .fare-summary, .cancellation-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .seat-summary h4, .fare-summary h4, .cancellation-info h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .seat-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .fare-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .fare-row.total {
+    font-weight: 700;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-color);
+  }
+  
+  .cancellation-info p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .booking-container .container {
+      flex-direction: column;
+    }
+    
+    .booking-form-section, .booking-summary {
+      flex: none;
+      width: 100%;
+    }
+    
+    .booking-summary {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .booking-progress {
+      flex-wrap: wrap;
+    }
+    
+    .progress-item {
+      width: auto;
+      margin-bottom: 15px;
+    }
+    
+    .progress-line {
+      display: none;
+    }
+  }
+  

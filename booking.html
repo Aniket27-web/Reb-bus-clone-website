@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - RedBus Clone</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/booking.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>redBus</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search-results.html" class="active">Bus Tickets</a></li>
+          <li><a href="my-tickets.html">My Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="help">Help</a>
+        <a href="#" class="account">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-header">
+      <div class="container">
+        <h2>Complete Your Booking</h2>
+        <div class="booking-progress">
+          <div class="progress-item active">
+            <div class="progress-number">1</div>
+            <p>Bus Selection</p>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-item active">
+            <div class="progress-number">2</div>
+            <p>Seat Selection</p>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-item active">
+            <div class="progress-number">3</div>
+            <p>Passenger Details</p>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-item">
+            <div class="progress-number">4</div>
+            <p>Payment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-container">
+      <div class="container">
+        <div class="booking-form-section">
+          <h3>Passenger Details</h3>
+          <form class="passenger-form">
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="Your email address" required>
+              <p class="input-info">Your ticket will be sent to this email</p>
+            </div>
+            <div class="form-group">
+              <label for="contact-mobile">Mobile Number</label>
+              <input type="tel" id="contact-mobile" placeholder="10 digit mobile number" required>
+              <p class="input-info">Ticket and journey updates will be sent to this number</p>
+            </div>
+
+            <div class="passenger-header">
+              <h4>Passenger 1 Details - Seat L5</h4>
+            </div>
+            <div class="form-group">
+              <label for="passenger-name">Name</label>
+              <input type="text" id="passenger-name" placeholder="Passenger full name" required>
+            </div>
+            <div class="form-group">
+              <label for="passenger-age">Age</label>
+              <input type="number" id="passenger-age" placeholder="Age in years" min="1" max="120" required>
+            </div>
+            <div class="form-group gender-group">
+              <label>Gender</label>
+              <div class="gender-options">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required>
+                  <span>Male</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female">
+                  <span>Female</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="additional-options">
+              <h4>Additional Options</h4>
+              <div class="insurance-option">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="travel-insurance">
+                  <span>Add Travel Insurance - ₹20 per passenger</span>
+                </label>
+                <p class="option-info">Cover your trip against unforeseen circumstances</p>
+              </div>
+              <div class="donation-option">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="donation">
+                  <span>Donate ₹5 to Green Fund</span>
+                </label>
+                <p class="option-info">Support environmental initiatives for sustainable travel</p>
+              </div>
+            </div>
+
+            <button type="submit" class="proceed-payment-btn">Proceed to Payment</button>
+          </form>
+        </div>
+
+        <div class="booking-summary">
+          <h3>Booking Summary</h3>
+          <div class="bus-summary">
+            <div class="operator-info">
+              <h4>Shivneri Travels</h4>
+              <p>AC Sleeper (2+1)</p>
+            </div>
+            <div class="journey-overview">
+              <div class="journey-date">
+                <p class="date-label">Date</p>
+                <p class="date-value">Thu, 15 Jun 2023</p>
+              </div>
+              <div class="journey-route">
+                <div class="route-point">
+                  <p class="time">07:00</p>
+                  <p class="place">Dadar, Mumbai</p>
+                </div>
+                <div class="route-arrow"></div>
+                <div class="route-point">
+                  <p class="time">10:30</p>
+                  <p class="place">Hinjewadi, Pune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seat-summary">
+            <h4>Seat Information</h4>
+            <div class="seat-info-row">
+              <p>Seat(s)</p>
+              <p>L5</p>
+            </div>
+          </div>
+
+          <div class="fare-summary">
+            <h4>Fare Details</h4>
+            <div class="fare-breakdown">
+              <div class="fare-row">
+                <p>Base Fare (1 seat)</p>
+                <p>₹599</p>
+              </div>
+              <div class="fare-row">
+                <p>GST (5%)</p>
+                <p>₹30</p>
+              </div>
+              <div class="fare-row">
+                <p>Service Fee</p>
+                <p>₹20</p>
+              </div>
+              <div class="fare-row optional" id="insurance-row" style="display: none;">
+                <p>Travel Insurance</p>
+                <p>₹20</p>
+              </div>
+              <div class="fare-row optional" id="donation-row" style="display: none;">
+                <p>Green Fund Donation</p>
+                <p>₹5</p>
+              </div>
+              <div class="fare-row total">
+                <p>Total Amount</p>
+                <p id="total-fare">₹649</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cancellation-info">
+            <h4>Cancellation Policy</h4>
+            <p>> 24 hours: 90% refund</p>
+            <p>12 - 24 hours: 70% refund</p>
+            <p>6 - 12 hours: 50% refund</p>
+            <p>0 - 6 hours: No refund</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>About redBus</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bus Operator Registration</a></li>
+            <li><a href="#">Agent Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Global Sites</h4>
+          <ul>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Malaysia</a></li>
+            <li><a href="#">Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 redBus Clone. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>

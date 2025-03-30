@@ -1,0 +1,315 @@
+/* Search Results Page Styles */
+
+/* Journey Details Section */
+.journey-details {
+    background-color: var(--white);
+    padding: 15px 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+  }
+  
+  .journey-details .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .journey-info h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .journey-info p {
+    color: var(--text-gray);
+  }
+  
+  .modify-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .modify-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Search Container */
+  .search-container .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Filters */
+  .filters {
+    flex: 0 0 250px;
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    align-self: flex-start;
+    position: sticky;
+    top: 80px;
+  }
+  
+  .filter-section {
+    margin-bottom: 25px;
+  }
+  
+  .filter-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .filter-options input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Results */
+  .results {
+    flex: 1;
+  }
+  
+  .result-card {
+    background-color: var(--white);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bus-info {
+    flex: 0 0 20%;
+  }
+  
+  .bus-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .bus-type {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .rating {
+    display: inline-block;
+    background-color: #4caf50;
+    color: var(--white);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .timing {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .departure, .arrival {
+    text-align: center;
+  }
+  
+  .time {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .place {
+    color: var(--text-gray);
+    font-size: 14px;
+  }
+  
+  .duration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-light);
+    font-size: 12px;
+  }
+  
+  .duration-line {
+    width: 80px;
+    height: 2px;
+    background-color: var(--border-color);
+    margin-top: 5px;
+    position: relative;
+  }
+  
+  .duration-line::before, .duration-line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    top: -2px;
+  }
+  
+  .duration-line::before {
+    left: -2px;
+  }
+  
+  .duration-line::after {
+    right: -2px;
+  }
+  
+  .amenities {
+    flex: 0 0 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .amenity {
+    display: inline-block;
+    background-color: var(--light-gray);
+    color: var(--text-gray);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .price-section {
+    flex: 0 0 20%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+  }
+  
+  .seats {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .view-seats {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .view-seats:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .load-more {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .load-more-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .load-more-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .bus-info, .timing, .amenities, .price-section {
+      flex: 0 0 100%;
+    }
+    
+    .timing {
+      order: -1;
+      margin-bottom: 15px;
+    }
+    
+    .bus-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .amenities {
+      margin: 10px 0;
+    }
+    
+    .price-section {
+      text-align: left;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .price, .seats {
+      margin: 0 20px 0 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .search-container .container {
+      flex-direction: column;
+    }
+    
+    .filters {
+      flex: none;
+      width: 100%;
+      position: static;
+      margin-bottom: 20px;
+    }
+    
+    .journey-details .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .journey-info {
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - RedBus Clone</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/search-results.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>redBus</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search-results.html" class="active">Bus Tickets</a></li>
+          <li><a href="my-tickets.html">My Tickets</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="#" class="help">Help</a>
+        <a href="#" class="account">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="journey-details">
+      <div class="container">
+        <div class="journey-info">
+          <h2>Mumbai to Pune</h2>
+          <p>Thursday, 15 June 2023</p>
+        </div>
+        <div class="modify-search">
+          <button class="modify-btn">Modify Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-container">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-section">
+            <h3>Departure Time</h3>
+            <div class="filter-options">
+              <label><input type="checkbox"> Morning (6AM - 12PM)</label>
+              <label><input type="checkbox"> Afternoon (12PM - 6PM)</label>
+              <label><input type="checkbox"> Evening (6PM - 12AM)</label>
+              <label><input type="checkbox"> Night (12AM - 6AM)</label>
+            </div>
+          </div>
+          <div class="filter-section">
+            <h3>Bus Type</h3>
+            <div class="filter-options">
+              <label><input type="checkbox"> AC</label>
+              <label><input type="checkbox"> Non-AC</label>
+              <label><input type="checkbox"> Sleeper</label>
+              <label><input type="checkbox"> Seater</label>
+            </div>
+          </div>
+          <div class="filter-section">
+            <h3>Pickup Point</h3>
+            <div class="filter-options">
+              <label><input type="checkbox"> Dadar</label>
+              <label><input type="checkbox"> Andheri</label>
+              <label><input type="checkbox"> Borivali</label>
+              <label><input type="checkbox"> Thane</label>
+            </div>
+          </div>
+          <div class="filter-section">
+            <h3>Drop Point</h3>
+            <div class="filter-options">
+              <label><input type="checkbox"> Shivaji Nagar</label>
+              <label><input type="checkbox"> Hinjewadi</label>
+              <label><input type="checkbox"> Kothrud</label>
+              <label><input type="checkbox"> Wakad</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="results">
+          <div class="result-card">
+            <div class="bus-info">
+              <h3>Shivneri Travels</h3>
+              <p class="bus-type">AC Sleeper (2+1)</p>
+              <div class="rating">4.5</div>
+            </div>
+            <div class="timing">
+              <div class="departure">
+                <p class="time">07:00</p>
+                <p class="place">Dadar</p>
+              </div>
+              <div class="duration">
+                <p>3h 30m</p>
+                <div class="duration-line"></div>
+              </div>
+              <div class="arrival">
+                <p class="time">10:30</p>
+                <p class="place">Hinjewadi</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <span class="amenity">USB</span>
+              <span class="amenity">WiFi</span>
+              <span class="amenity">Water</span>
+              <span class="amenity">Blanket</span>
+            </div>
+            <div class="price-section">
+              <p class="price">₹599</p>
+              <p class="seats">25 seats available</p>
+              <a href="bus-details.html" class="view-seats">View Seats</a>
+            </div>
+          </div>
+          
+          <div class="result-card">
+            <div class="bus-info">
+              <h3>Prasanna Travels</h3>
+              <p class="bus-type">Non-AC Seater</p>
+              <div class="rating">4.2</div>
+            </div>
+            <div class="timing">
+              <div class="departure">
+                <p class="time">08:30</p>
+                <p class="place">Andheri</p>
+              </div>
+              <div class="duration">
+                <p>4h 00m</p>
+                <div class="duration-line"></div>
+              </div>
+              <div class="arrival">
+                <p class="time">12:30</p>
+                <p class="place">Shivaji Nagar</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <span class="amenity">Charging Point</span>
+              <span class="amenity">Snacks</span>
+            </div>
+            <div class="price-section">
+              <p class="price">₹349</p>
+              <p class="seats">15 seats available</p>
+              <a href="bus-details.html" class="view-seats">View Seats</a>
+            </div>
+          </div>
+          
+          <div class="result-card">
+            <div class="bus-info">
+              <h3>Neeta Travels</h3>
+              <p class="bus-type">AC Volvo Multi-Axle</p>
+              <div class="rating">4.7</div>
+            </div>
+            <div class="timing">
+              <div class="departure">
+                <p class="time">16:15</p>
+                <p class="place">Borivali</p>
+              </div>
+              <div class="duration">
+                <p>3h 15m</p>
+                <div class="duration-line"></div>
+              </div>
+              <div class="arrival">
+                <p class="time">19:30</p>
+                <p class="place">Kothrud</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <span class="amenity">USB</span>
+              <span class="amenity">WiFi</span>
+              <span class="amenity">Water</span>
+              <span class="amenity">Blanket</span>
+              <span class="amenity">TV</span>
+            </div>
+            <div class="price-section">
+              <p class="price">₹799</p>
+              <p class="seats">8 seats available</p>
+              <a href="bus-details.html" class="view-seats">View Seats</a>
+            </div>
+          </div>
+          
+          <div class="result-card">
+            <div class="bus-info">
+              <h3>VRL Travels</h3>
+              <p class="bus-type">AC Sleeper (2+1)</p>
+              <div class="rating">4.4</div>
+            </div>
+            <div class="timing">
+              <div class="departure">
+                <p class="time">22:00</p>
+                <p class="place">Thane</p>
+              </div>
+              <div class="duration">
+                <p>3h 45m</p>
+                <div class="duration-line"></div>
+              </div>
+              <div class="arrival">
+                <p class="time">01:45</p>
+                <p class="place">Wakad</p>
+              </div>
+            </div>
+            <div class="amenities">
+              <span class="amenity">USB</span>
+              <span class="amenity">WiFi</span>
+              <span class="amenity">Water</span>
+              <span class="amenity">Blanket</span>
+            </div>
+            <div class="price-section">
+              <p class="price">₹699</p>
+              <p class="seats">12 seats available</p>
+              <a href="bus-details.html" class="view-seats">View Seats</a>
+            </div>
+          </div>
+          
+          <div class="load-more">
+            <button class="load-more-btn">Load More Buses</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>About redBus</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bus Operator Registration</a></li>
+            <li><a href="#">Agent Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Global Sites</h4>
+          <ul>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Singapore</a></li>
+            <li><a href="#">Malaysia</a></li>
+            <li><a href="#">Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 redBus Clone. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</body>
+</html>
